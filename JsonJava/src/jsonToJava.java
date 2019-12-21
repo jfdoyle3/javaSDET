@@ -15,8 +15,8 @@ public class jsonToJava {
 	   System.out.println("Connected to Database");
 	   
 	   //object of statement class will help us to execute queries
-	   Statement state=conn.createStatement();
-	   ResultSet queryResult=state.executeQuery("select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia' and purchasedDate=curdate();");
+	   Statement ask=conn.createStatement();
+	   ResultSet queryResult=ask.executeQuery("select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia' and purchasedDate=curdate() LIMIT 1;");
 	   System.out.println("Executed the Query");
 	   
 		/*
@@ -29,12 +29,25 @@ public class jsonToJava {
 		 * queryResult.next(); // set  pointer to Second Record
 		 * 
 		 */	  
-	   while (queryResult.next())
+	   while (queryResult.next()) /* boolean: the while True until it reaches the last record*/
 	  {
-		  System.out.println(queryResult.getString(1));
-		  System.out.println(queryResult.getString(2));
-		  System.out.println(queryResult.getInt(3));
-		  System.out.println(queryResult.getString(4));
+			/*  w/o getter / setters:
+			 * System.out.println(queryResult.getString(1));
+			 * System.out.println(queryResult.getString(2));
+			 * System.out.println(queryResult.getInt(3));
+			 * System.out.println(queryResult.getString(4));
+			 */
+		   // With getters / setters:
+		   CustomerDetails customer=new CustomerDetails();
+		   customer.setCourseName(queryResult.getString(1));
+		   customer.setPurchasedDate(queryResult.getString(2));
+		   customer.setAmount(queryResult.getInt(3));
+		   customer.setLocation(queryResult.getString(4));
+		   
+		   System.out.println(customer.getCourseName());
+		   System.out.println(customer.getPurchasedDate());
+		   System.out.println(customer.getAmount());
+		   System.out.println(customer.getLocation());
 	  }
 	  conn.close();
 	 }
