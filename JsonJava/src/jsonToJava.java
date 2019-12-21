@@ -18,14 +18,18 @@ public class jsonToJava {
 	   Statement state=conn.createStatement();
 	   ResultSet sqlResults=state.executeQuery("select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia' and purchasedDate=curdate();");
 	   System.out.println("Executed the Query");
-	   // Manually select record items
-	  // sqlResults.next(); // set pointer to First Record
-	  // sqlResults.getString(1);
-	  // sqlResults.getString(2);
-	  // sqlResults.getInt(3);
-	  // sqlResults.getString(4);
-	  // sqlResults.next(); // set pointer to Second Record
-	  while (sqlResults.next())
+	   
+		/*
+		 * Manually select record items 
+		 * sqlResults.next(); // set pointer to First Record
+		 * sqlResults.getString(1); 
+		 * sqlResults.getString(2);
+		 * sqlResults.getInt(3);
+		 * sqlResults.getString(4);
+		 * sqlResults.next(); // set  pointer to Second Record
+		 * 
+		 */	  
+	   while (sqlResults.next())
 	  {
 		  System.out.println(sqlResults.getString(1));
 		  System.out.println(sqlResults.getString(2));
