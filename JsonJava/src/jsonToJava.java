@@ -16,25 +16,25 @@ public class jsonToJava {
 	   
 	   //object of statement class will help us to execute queries
 	   Statement state=conn.createStatement();
-	   ResultSet sqlResults=state.executeQuery("select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia' and purchasedDate=curdate();");
+	   ResultSet queryResult=state.executeQuery("select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia' and purchasedDate=curdate();");
 	   System.out.println("Executed the Query");
 	   
 		/*
 		 * Manually select record items 
-		 * sqlResults.next(); // set pointer to First Record
-		 * sqlResults.getString(1); 
-		 * sqlResults.getString(2);
-		 * sqlResults.getInt(3);
-		 * sqlResults.getString(4);
-		 * sqlResults.next(); // set  pointer to Second Record
+		 * queryResult.next(); // set pointer to First Record
+		 * queryResult.getString(1); 
+		 * queryResult.getString(2);
+		 * queryResult.getInt(3);
+		 * queryResult.getString(4);
+		 * queryResult.next(); // set  pointer to Second Record
 		 * 
 		 */	  
-	   while (sqlResults.next())
+	   while (queryResult.next())
 	  {
-		  System.out.println(sqlResults.getString(1));
-		  System.out.println(sqlResults.getString(2));
-		  System.out.println(sqlResults.getInt(3));
-		  System.out.println(sqlResults.getString(4));
+		  System.out.println(queryResult.getString(1));
+		  System.out.println(queryResult.getString(2));
+		  System.out.println(queryResult.getInt(3));
+		  System.out.println(queryResult.getString(4));
 	  }
 	  conn.close();
 	 }
