@@ -13,4 +13,6 @@ INSERT INTO CustomerInfo values("WebServices",CURRENT_DATE(),21,'Asia');
 INSERT INTO CustomerInfo values("Jmeter",CURRENT_DATE(),76,'Asia');
 
 
-select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia' and purchasedDate=curdate();
+/* select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia'; */
+/* select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia' and purchasedDate=curdate(); */
+select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia' and purchasedDate=curdate() LIMIT 1;
