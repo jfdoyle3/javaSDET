@@ -8,14 +8,17 @@ public class jsonToJava {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		// TODO Auto-generated method stub
+	   
 	   Class.forName("com.mysql.cj.jdbc.Driver");
 	   Connection conn=null;
 	   conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/business", "root", "DBadmin");
+	   System.out.println("Connected to Database");
 	   
 	   //object of statement class will help us to execute queries
 	   Statement state=conn.createStatement();
 	   ResultSet sqlResults=state.executeQuery("select * from CustomerInfo where purchasedDate=CURDATE() and Location ='Asia' and purchasedDate=curdate();");
-	  // Manually select record items
+	   System.out.println("Executed the Query");
+	   // Manually select record items
 	  // sqlResults.next(); // set pointer to First Record
 	  // sqlResults.getString(1);
 	  // sqlResults.getString(2);
