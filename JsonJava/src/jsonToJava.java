@@ -47,7 +47,7 @@ public class jsonToJava {
 			 * System.out.println(queryResult.getInt(3));
 			 * System.out.println(queryResult.getString(4));
 			 */
-		   // With getters| setters: Using Setters:
+		   // With getters | setters: Using Setters:
 		   CustomerDetails customer=new CustomerDetails();
 		   customer.setCourseName(queryResult.getString(1));
 		   customer.setPurchasedDate(queryResult.getString(2));
@@ -64,7 +64,7 @@ public class jsonToJava {
 	  }
 	   for (int index=0; index<customerList.size(); index++)
 	   {
-		 //Jackson API  
+		   //Jackson API : maps DB tables fields to json 
 	   ObjectMapper customerObj=new ObjectMapper();
 	   customerObj.writeValue(new File("C:\\repository\\SDET\\javaSDET\\JsonJava\\customerInfo"+index+".json"), customerList.get(index));
 	   }

@@ -20,15 +20,18 @@ import java.sql.ResultSet;
 
 public class oneSingleJson {
 
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws JsonMappingException, JsonGenerationException, ClassNotFoundException, SQLException,IOException {
   
+	   // Initialize JDBC Driver
 	   Class.forName("com.mysql.cj.jdbc.Driver");
 	   Connection connctn=null;
 	   
+	   // Setup Array Lists: customerList: Object Array of DB records, jsonArr: Array of json objects.
 	   ArrayList<CustomerDetails> customerList=new ArrayList<CustomerDetails>();
 	   JSONArray jsonArr=new JSONArray();
 	   
-	   // Connect to Database
+	   // Connect to mySQL Database called business
 	   connctn=DriverManager.getConnection("jdbc:mysql://localhost:3306/business", "root", "DBadmin");
 	   System.out.println("Connected to Database");
 	   
@@ -52,11 +55,11 @@ public class oneSingleJson {
 	   for (int index=0; index<customerList.size(); index++)
 	   {
 		   
-		 //Jackson API
+		 //Jackson API : maps DB tables fields to json
 	   ObjectMapper customerObj=new ObjectMapper();
 	   customerObj.writeValue(new File("C:\\repository\\SDET\\javaSDET\\JsonJava\\customerInfo"+index+".json"), customerList.get(index));
 	   
-	   // Gson: Create json String from Java Object
+	   // Gson: Create json String from Java Object/json
 	   Gson gson=new Gson();
 	   String jsonString=gson.toJson(customerList.get(index));
 	   jsonArr.add(jsonString);
@@ -65,23 +68,24 @@ public class oneSingleJson {
 	   System.out.println(customerList.size()+" Files Created");
 	   
 
-	   // Json Simple: .put("data",jsonArr) .  "Data" is json header /array name. jsonArray is the data array
+	   // Json Simple: .put("data",jsonArr) .  "data" is json header /array name. jsonArray is the DB json data
 	   JSONObject jsonObj=new JSONObject();
 	   jsonObj.put("data",jsonArr);
 	   
-	   // Apache Commons Text
+	   // Apache Commons Text : cleans out unwanted '\' esc char. and removes bugged plugin '"' using replace
 	   String jsonEscRemoved=StringEscapeUtils.unescapeJava(jsonObj.toJSONString());
 	   String stringMod1=jsonEscRemoved.replace("\"{","{");
-	   String cleanJsonResult=stringMod1.replace("}\"", "}");
-	   System.out.println(cleanJsonResult);
+	   String jsonResult=stringMod1.replace("}\"", "}");
+	   System.out.println(jsonResult);
 	   
 	   // Write CustomerData.json file
 	   try (FileWriter jsonFile=new FileWriter("C:\\repository\\SDET\\javaSDET\\JsonJava\\CustomerData.json"))
 	   {
-		   jsonFile.write(cleanJsonResult);
+		   jsonFile.write(jsonResult);
 		   
 	   }
 	   System.out.println("CustomerData.json written");
+	   
 	   
 	  connctn.close();
 	   System.out.println("Connection Closed");
