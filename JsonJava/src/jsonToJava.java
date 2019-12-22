@@ -64,6 +64,7 @@ public class jsonToJava {
 	  }
 	   for (int index=0; index<customerList.size(); index++)
 	   {
+		 //Jackson API  
 	   ObjectMapper customerObj=new ObjectMapper();
 	   customerObj.writeValue(new File("D:\\repository\\SDET\\javaSDET\\JsonJava\\customerInfo"+index+".json"), customerList.get(index));
 	   }
