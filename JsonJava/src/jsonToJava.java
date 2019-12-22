@@ -14,7 +14,7 @@ import java.sql.ResultSet;
 
 public class jsonToJava {
 
-	public static void main(String[] args) throws ClassNotFoundException, SQLException,IOException {
+	public static void main(String[] args) throws JsonMappingException, JsonGenerationException, ClassNotFoundException, SQLException,IOException {
   
 	   Class.forName("com.mysql.cj.jdbc.Driver");
 	   Connection connctn=null;
@@ -66,7 +66,7 @@ public class jsonToJava {
 	   {
 		 //Jackson API  
 	   ObjectMapper customerObj=new ObjectMapper();
-	   customerObj.writeValue(new File("D:\\repository\\SDET\\javaSDET\\JsonJava\\customerInfo"+index+".json"), customerList.get(index));
+	   customerObj.writeValue(new File("C:\\repository\\SDET\\javaSDET\\JsonJava\\customerInfo"+index+".json"), customerList.get(index));
 	   }
 	   System.out.println(customerList.size()+" Files Created");
 	  connctn.close();

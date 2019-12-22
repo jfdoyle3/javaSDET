@@ -20,7 +20,7 @@ import java.sql.ResultSet;
 
 public class oneSingleJson {
 
-	public static void main(String[] args) throws ClassNotFoundException, SQLException,IOException {
+	public static void main(String[] args) throws JsonMappingException, JsonGenerationException, ClassNotFoundException, SQLException,IOException {
   
 	   Class.forName("com.mysql.cj.jdbc.Driver");
 	   Connection connctn=null;
@@ -54,7 +54,7 @@ public class oneSingleJson {
 		   
 		 //Jackson API
 	   ObjectMapper customerObj=new ObjectMapper();
-	   customerObj.writeValue(new File("D:\\repository\\SDET\\javaSDET\\JsonJava\\customerInfo"+index+".json"), customerList.get(index));
+	   customerObj.writeValue(new File("C:\\repository\\SDET\\javaSDET\\JsonJava\\customerInfo"+index+".json"), customerList.get(index));
 	   
 	   // Gson: Create json String from Java Object
 	   Gson gson=new Gson();
@@ -76,7 +76,7 @@ public class oneSingleJson {
 	   System.out.println(cleanJsonResult);
 	   
 	   // Write CustomerData.json file
-	   try (FileWriter jsonFile=new FileWriter("D:\\repository\\SDET\\javaSDET\\JsonJava\\CustomerData.json"))
+	   try (FileWriter jsonFile=new FileWriter("C:\\repository\\SDET\\javaSDET\\JsonJava\\CustomerData.json"))
 	   {
 		   jsonFile.write(cleanJsonResult);
 		   
