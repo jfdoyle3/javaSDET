@@ -1,16 +1,26 @@
-# Software Development Engineer in Test
-## in Java Language
+# Software Development Engineer Tester
+### Java Language
 
-#### Start date: Dec 19,2019
-#### video tutorial : 13hrs
-
-*Heavy commented
-*Leaving self notation and reference material how the code works.
+------------
 
 
-Changed Workstation: Dec 22, 2019
-due to laptop's memory it can't run Docker.
-Continuing on Desktop.
- Made Docker container using selenium/standalone-chrome:latest
- Ran:
- docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:latest
+#### Start date: December 19,2019
+##### video tutorial : 13hrs
+------------
+
+#### Purpose:
+
+* Leaving self notation and reference material how the code works.
+ * note: perfect example why set/get is better than how I currently think.
+
+##### Changed Workstations: December 22, 2019
+------------
+* Laptop did not have enough memory to run aa
+* Continuing project on Desktop.
+ 
+### Docker 
+------------
+* Made Docker container:
+     * selenium/standalone-chrome:latest
+* Ran: 
+    * docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:latest
