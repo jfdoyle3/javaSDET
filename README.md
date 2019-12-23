@@ -16,7 +16,8 @@
  
 ### Docker 
 ------------
-* Made Docker container:
-     * selenium/standalone-chrome:latest
-* Ran: 
+* Pull Docker container:
+    *docker pull selenium/standalone-chrome:latest
+	 
+* Ran Docker container: 
     * docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:latest
