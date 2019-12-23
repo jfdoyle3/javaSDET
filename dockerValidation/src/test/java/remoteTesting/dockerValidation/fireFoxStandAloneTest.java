@@ -14,9 +14,9 @@ public class fireFoxStandAloneTest {
 		// Maven with Selenium Automation and FireFox Driver
 		// class needed to used is: RemoteWebDriver
 		// Declare what browser. (.chrome, .firefox..), What URL and pass thru driver.
-		
-		
+				
 		DesiredCapabilities cap=DesiredCapabilities.firefox();
+		
 		URL url=new URL("http://localhost:4444/wd/hub");
 		RemoteWebDriver driver=new RemoteWebDriver(url,cap);
 		
