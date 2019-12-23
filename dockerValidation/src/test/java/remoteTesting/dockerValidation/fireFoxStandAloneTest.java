@@ -11,7 +11,7 @@ public class fireFoxStandAloneTest {
 
 	public static void main(String[] args) throws MalformedURLException
 	{
-		// Maven with Selenium Automation and Chrome Driver
+		// Maven with Selenium Automation and FireFox Driver
 		// class needed to used is: RemoteWebDriver
 		// Declare what browser. (.chrome, .firefox..), What URL and pass thru driver.
 		
