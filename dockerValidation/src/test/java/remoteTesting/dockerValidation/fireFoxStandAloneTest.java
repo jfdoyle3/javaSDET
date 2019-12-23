@@ -7,16 +7,16 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 
-public class chromeStandAloneTest {
+public class fireFoxStandAloneTest {
 
 	public static void main(String[] args) throws MalformedURLException
 	{
-		// Maven with Selenium Automation and FireFox Driver
+		// Maven with Selenium Automation and Chrome Driver
 		// class needed to used is: RemoteWebDriver
 		// Declare what browser. (.chrome, .firefox..), What URL and pass thru driver.
 		
-		DesiredCapabilities cap=DesiredCapabilities.chrome();
-	
+		
+		DesiredCapabilities cap=DesiredCapabilities.firefox();
 		URL url=new URL("http://localhost:4444/wd/hub");
 		RemoteWebDriver driver=new RemoteWebDriver(url,cap);
 		
