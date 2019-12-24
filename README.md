@@ -33,3 +33,6 @@
 * Add more Nodes to hub.
     * docker-compose scale chrome=5 
 	    * usage: _browserName_= No. of instances.
+------------
+	
+
