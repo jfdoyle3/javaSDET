@@ -37,6 +37,14 @@
     * docker-compose scale chrome=5 
 	    * usage: _browserName_= No. of instances.
 ------------
+#### Jenkins
 
+* Getting Java Jenkins
+    * file: Jenkins.war
+*Run
+ * java -jar jenkin.war
+	* defaults port 8080, to change port use --httpPort= __port number__
+* Using 
+	* Browser: localhost:8080/
 
 
