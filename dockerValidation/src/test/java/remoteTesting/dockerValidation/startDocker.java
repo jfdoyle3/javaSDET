@@ -10,10 +10,12 @@ import org.testng.annotations.Test;
 
 public class startDocker {
 
-	@Test
-	public void startFile() throws IOException, InterruptedException
+	
+	public void StartDocker() throws IOException, InterruptedException
 	{
 		boolean flag=false;
+		
+		// Run an external file
 		Runtime runTime=Runtime.getRuntime();
 		runTime.exec("cmd /c start dockerUp.bat");
 		
@@ -31,6 +33,8 @@ public class startDocker {
 			{
 				break;
 			}
+			
+			// Read external file called: fileName
 			BufferedReader reader=new BufferedReader(new FileReader(fileName));
 			String currentLine=reader.readLine();
 			
@@ -48,7 +52,7 @@ public class startDocker {
 		}
 		
 		Assert.assertTrue(flag);
-		runTime.exec("cmd /c start ScaleGrid.bat");
+		runTime.exec("cmd /c start ScaleGrid.bat"); 
 		Thread.sleep(5000);
 	}
 }

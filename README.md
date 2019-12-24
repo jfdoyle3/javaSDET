@@ -27,12 +27,16 @@
 * Basic Grid setup
     * Make a _docker-compose.yaml_ file for configuration. 
        * There is a default hub configuration on [SeleniumHQ Github](https://github.com/SeleniumHQ/docker-selenium) to use as a start.
-* Run
+	   
+* Start Up Grid
 	* docker-compose -f _docker-compose.yaml_ up
+* Shutdown Grid
+	* docker-compose -f _docker-compose.yaml_ down 
 	
 * Add more Nodes to hub.
     * docker-compose scale chrome=5 
 	    * usage: _browserName_= No. of instances.
 ------------
-	
+
+
 

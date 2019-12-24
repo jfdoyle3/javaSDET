@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3138" started-at="2019-12-23T23:45:24 EST" finished-at="2019-12-23T23:45:27 EST">
+  <suite name="Suite" duration-ms="39239" started-at="2019-12-24T08:16:13 EST" finished-at="2019-12-24T08:16:52 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3138" started-at="2019-12-23T23:45:24 EST" finished-at="2019-12-23T23:45:27 EST">
-      <class name="remoteTesting.dockerValidation.stopDocker">
-        <test-method status="PASS" signature="startFile()[pri:0, instance:remoteTesting.dockerValidation.stopDocker@eec5a4a]" name="startFile" duration-ms="3069" started-at="2019-12-23T23:45:24 EST" finished-at="2019-12-23T23:45:27 EST">
+    <test name="Test" duration-ms="39239" started-at="2019-12-24T08:16:13 EST" finished-at="2019-12-24T08:16:52 EST">
+      <class name="remoteTesting.dockerValidation.chromeNode1Test">
+        <test-method status="PASS" signature="startDockerGrid()[pri:0, instance:remoteTesting.dockerValidation.chromeNode1Test@61f8bee4]" name="startDockerGrid" is-config="true" duration-ms="13304" started-at="2019-12-24T08:16:13 EST" finished-at="2019-12-24T08:16:27 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startFile -->
-      </class> <!-- remoteTesting.dockerValidation.stopDocker -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- startDockerGrid -->
+        <test-method status="PASS" signature="test1()[pri:0, instance:remoteTesting.dockerValidation.chromeNode1Test@61f8bee4]" name="test1" duration-ms="19629" started-at="2019-12-24T08:16:27 EST" finished-at="2019-12-24T08:16:46 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="stopDockerGrid()[pri:0, instance:remoteTesting.dockerValidation.chromeNode1Test@61f8bee4]" name="stopDockerGrid" is-config="true" duration-ms="6251" started-at="2019-12-24T08:16:46 EST" finished-at="2019-12-24T08:16:52 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDockerGrid -->
+      </class> <!-- remoteTesting.dockerValidation.chromeNode1Test -->
+      <class name="remoteTesting.dockerValidation.chromeNode2Test">
+        <test-method status="PASS" signature="test2()[pri:0, instance:remoteTesting.dockerValidation.chromeNode2Test@7b49cea0]" name="test2" duration-ms="6934" started-at="2019-12-24T08:16:27 EST" finished-at="2019-12-24T08:16:34 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- remoteTesting.dockerValidation.chromeNode2Test -->
+      <class name="remoteTesting.dockerValidation.chromeNode3Test">
+        <test-method status="PASS" signature="test3()[pri:0, instance:remoteTesting.dockerValidation.chromeNode3Test@887af79]" name="test3" duration-ms="8906" started-at="2019-12-24T08:16:27 EST" finished-at="2019-12-24T08:16:36 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- remoteTesting.dockerValidation.chromeNode3Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

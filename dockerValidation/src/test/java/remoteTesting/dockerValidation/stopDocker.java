@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class stopDocker {
 
 	@Test
-	public void startFile() throws IOException, InterruptedException
+	public void ShutDownDocker() throws IOException, InterruptedException
 	{
 		boolean flag=false;
 		Runtime runTime=Runtime.getRuntime();
@@ -37,7 +37,7 @@ public class stopDocker {
 			
 			while(currentLine!=null && !flag)
 			{
-				if (currentLine.contains("Shutdown complete"))
+				if (currentLine.contains("selenium-hub exited"))
 				{
 					System.out.println("Found it.");
 					flag=true;
@@ -49,11 +49,11 @@ public class stopDocker {
 		}
 		
 		Assert.assertTrue(flag);
-		File fileDel=new File(fileName);
-		if (fileDel.delete())
-		{
-			System.out.println("file deleted");
-		}
+//		File fileDel=new File(fileName);
+//		if (fileDel.delete())
+//		{
+//			System.out.println("file deleted");
+//		}
 		
 	}
 }
