@@ -1,17 +1,16 @@
 package remoteTesting.dockerValidation;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Calendar;
 
 import org.testng.Assert;
-import org.testng.annotations.Test;
+
 
 public class stopDocker {
 
-	@Test
+	
 	public void ShutDownDocker() throws IOException, InterruptedException
 	{
 		boolean flag=false;
@@ -39,7 +38,7 @@ public class stopDocker {
 			{
 				if (currentLine.contains("selenium-hub exited"))
 				{
-					System.out.println("Found it.");
+					System.out.println("Selenium Hub is running");
 					flag=true;
 					break;
 				}
@@ -49,10 +48,13 @@ public class stopDocker {
 		}
 		
 		Assert.assertTrue(flag);
+		
+//    Didn't work in project, worked when running on it's own.
+//    Kept it here need to work her or paste it else where to work.
 //		File fileDel=new File(fileName);
 //		if (fileDel.delete())
 //		{
-//			System.out.println("file deleted");
+//			System.out.println("Log file deleted");
 //		}
 		
 	}
