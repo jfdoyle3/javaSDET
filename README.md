@@ -49,7 +49,7 @@
 	* Browser: localhost:8080/
 
 ## Jenkins Pipline:
-* Pipline runs this list in a batch job
+* Pipline runs this list in a batch job: small deployment testing
 	* __Build__
 		* maven install
 	* __Deploy__
@@ -59,6 +59,19 @@
 	* __Release__
 		* task
 
+* Pipeline on large typical deployment testing jobs.
+  * Some of this list can be combined Testing
+    * Build
+	* Unit Testing Coverage
+	* Deploy into Development
+	* Smoke Testing
+	* Intergration Testing
+	* Unit Testing
+	* Deploy to QA
+	* UI / End to End Testing
+	* API Testing
+	* Quality Check
+	* Release into Production
 
 
 
