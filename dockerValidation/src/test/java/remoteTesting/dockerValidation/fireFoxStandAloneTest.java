@@ -25,9 +25,6 @@ public class fireFoxStandAloneTest {
 
 		// Console out the title of the Web Site
 		System.out.println(driver.getTitle());
-		
-		
-
 	}
 
 }

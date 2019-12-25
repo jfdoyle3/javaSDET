@@ -25,9 +25,6 @@ public class chromeStandAloneTest {
 
 		// Console out the title of the Web Site
 		System.out.println(driver.getTitle());
-		
-		
-
 	}
 
 }
