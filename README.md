@@ -73,5 +73,6 @@
 	* Quality Check
 	* Release into Production
 
-
+* Create a .jenkinsfile script with Stages and Steps in running the full project being tested in root folder for automation. 
+   * Execute Pipeline from Jenkin pointing to a GitHub or a Git repository.
 

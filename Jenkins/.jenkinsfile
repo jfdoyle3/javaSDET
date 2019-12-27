@@ -1,0 +1,44 @@
+pipeline
+{
+	agents any    // agents can be linux, mac, pc, etc.
+	
+	stages
+	{
+		stage ('Build')
+		{
+			steps
+			{
+				list of commands in the {} in order of operation in each step.
+				bat "mvn compile"
+			}
+		}
+		stage('deploy')
+		{
+			steps
+			{
+				echo "deploy"
+			}
+		}
+		stage('test')
+		{
+			steps
+			{
+				bat "mvn test"
+			}
+		}
+		stage('Unit Testing')
+		{
+			steps
+			{
+				bat "mvn compile"
+			}
+		}
+		stage('Release')
+		{
+			steps
+			{
+				echo "Release the project"
+			}
+		}
+	}
+}
