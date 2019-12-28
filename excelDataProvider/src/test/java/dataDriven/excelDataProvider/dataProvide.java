@@ -20,7 +20,7 @@ public class dataProvide {
 	 * The test will run 5 times with 5 separate sets of data arrays.
 	 */
 	
-	DataFormatter formatData=new DataFormatter();
+	DataFormatter frmtData=new DataFormatter();
 	
 	@Test(dataProvider="driveTest")
 	public void testCaseData(String ID,String textField1, String textField2)
@@ -35,8 +35,7 @@ public class dataProvide {
 	 */
 	
 	@DataProvider(name="driveTest")
-	public Object[][] getData() throws IOException
-	{
+	public Object[][] getData() throws IOException {
 		
 	/*
 	 * Simple in-line data testing. Example of 3 rows of an excel sheet would look like.
@@ -46,7 +45,7 @@ public class dataProvide {
 	 */
 		
 	// Get file from source
-		FileInputStream fileName=new FileInputStream("C:\\repository\\SDET\\javaSDET\\ExcelFiles\\excelDriven.xlsx");
+		FileInputStream fileName=new FileInputStream("D:\\repository\\SDET\\javaSDET\\ExcelFiles\\excelDriven.xlsx");
 		
 	// get info about Workbook/Sheet: get the first Workbook and Sheet and determine how many Columns and Rows in it.
 		XSSFWorkbook workBook=new XSSFWorkbook(fileName);
@@ -65,19 +64,16 @@ public class dataProvide {
 	 * Removing the +1 All Test Pass. Header row is revealed.
 	 */
 		
-		for (int row=0; row<rowCount; row++) 
+		for (int row=0; row<rowCount-1; row++) 
 		{
-			getRow=dataSheet.getRow(row);
+			getRow=dataSheet.getRow(row+1);
 			for (int col=0; col<colCount; col++)
 			{
-				XSSFCell currentCell=getRow.getCell(col);
-				data[row][col]=formatData.formatCellValue(currentCell);
+				XSSFCell cell=getRow.getCell(col);
+				data[row][col]=frmtData.formatCellValue(cell);
 			}
 		}
 		workBook.close();
 		return data;
 	}
-	
-	
-	
 }

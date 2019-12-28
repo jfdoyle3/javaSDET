@@ -13,7 +13,7 @@ public class excel {
 	@Test
 	public void getExcel() throws IOException
 	{
-		FileInputStream fileName=new FileInputStream("C:\\repository\\SDET\\javaSDET\\ExcelFiles\\excelDriven.xlsx");
+		FileInputStream fileName=new FileInputStream("D:\\repository\\SDET\\javaSDET\\ExcelFiles\\excelDriven.xlsx");
 	
 		XSSFWorkbook workBook=new XSSFWorkbook(fileName);
 		XSSFSheet dataSheet=workBook.getSheetAt(0);
@@ -32,5 +32,6 @@ public class excel {
 				System.out.println(getRow.getCell(col));
 			}
 		}
+		workBook.close();
 	}
 }
