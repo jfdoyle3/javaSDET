@@ -23,7 +23,7 @@ public class excel {
 	
 		Object data[][]=new Object[rowCount-1][colCount];
 
-		for (int row=0; row<rowCount; row++) 
+		for (int row=0; row<rowCount-1; row++) 
 		{
 			getRow=dataSheet.getRow(row+1);
 			
