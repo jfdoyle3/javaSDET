@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="92" started-at="2019-12-27T22:28:59 EST" finished-at="2019-12-27T22:28:59 EST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="92" started-at="2019-12-27T22:28:59 EST" finished-at="2019-12-27T22:28:59 EST">
+      <class name="dataDriven.excelDataProvider.dataProvide">
+        <test-method status="PASS" signature="testCaseData(int, java.lang.String, java.lang.String)[pri:0, instance:dataDriven.excelDataProvider.dataProvide@21213b92]" name="testCaseData" duration-ms="14" started-at="2019-12-27T22:28:59 EST" data-provider="driveTest" finished-at="2019-12-27T22:28:59 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Student]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Careerdevs]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseData -->
+        <test-method status="PASS" signature="testCaseData(int, java.lang.String, java.lang.String)[pri:0, instance:dataDriven.excelDataProvider.dataProvide@21213b92]" name="testCaseData" duration-ms="2" started-at="2019-12-27T22:28:59 EST" data-provider="driveTest" finished-at="2019-12-27T22:28:59 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1010]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Resistance]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Futile]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseData -->
+        <test-method status="PASS" signature="testCaseData(int, java.lang.String, java.lang.String)[pri:0, instance:dataDriven.excelDataProvider.dataProvide@21213b92]" name="testCaseData" duration-ms="2" started-at="2019-12-27T22:28:59 EST" data-provider="driveTest" finished-at="2019-12-27T22:28:59 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Stop, wait]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Go]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCaseData -->
+      </class> <!-- dataDriven.excelDataProvider.dataProvide -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
