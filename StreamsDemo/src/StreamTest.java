@@ -1,7 +1,8 @@
 	import java.util.ArrayList;
 	import java.util.List;
+import java.util.stream.Stream;
 
-	import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 	public class StreamTest {
 		
@@ -37,10 +38,21 @@
 			names.add("Jim");
 			names.add("Sue");
 			names.add("Adam");
-			names.add("Ant");
-			
+			names.add("Andrea");
+			//  there's no life for intermediate operation if there's no terminal operation
+			//  terminal operation will continue to .count .filter returns true.
+			// we can create stream.
+			// how to use .filter in stream API
 			Long count=names.stream().filter(list->list.startsWith("A")).count();
 			System.out.println(count);
+			
+			Long streamCount=Stream.of("Albert","Jim","Sue","Adam","Andrea").filter(list->
+			{
+				list.startsWith("A");
+				return true;
+			}).count();
+			System.out.println(streamCount);
+			// Print all names in ArrayList
 			
 		}
 	}
