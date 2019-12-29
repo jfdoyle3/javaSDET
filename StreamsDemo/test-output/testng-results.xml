@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58" started-at="2019-12-28T23:30:46 EST" finished-at="2019-12-28T23:30:46 EST">
+  <suite name="Default suite" duration-ms="64" started-at="2019-12-28T23:44:50 EST" finished-at="2019-12-28T23:44:50 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58" started-at="2019-12-28T23:30:46 EST" finished-at="2019-12-28T23:30:46 EST">
+    <test name="Default test" duration-ms="64" started-at="2019-12-28T23:44:50 EST" finished-at="2019-12-28T23:44:50 EST">
       <class name="StreamTest">
-        <test-method status="PASS" signature="StreamFilter()[pri:0, instance:StreamTest@31dc339b]" name="StreamFilter" duration-ms="14" started-at="2019-12-28T23:30:46 EST" finished-at="2019-12-28T23:30:46 EST">
+        <test-method status="PASS" signature="StreamFilter()[pri:0, instance:StreamTest@31dc339b]" name="StreamFilter" duration-ms="15" started-at="2019-12-28T23:44:50 EST" finished-at="2019-12-28T23:44:50 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StreamFilter -->
-        <test-method status="PASS" signature="regular()[pri:0, instance:StreamTest@31dc339b]" name="regular" duration-ms="1" started-at="2019-12-28T23:30:46 EST" finished-at="2019-12-28T23:30:46 EST">
+        <test-method status="PASS" signature="regular()[pri:0, instance:StreamTest@31dc339b]" name="regular" duration-ms="2" started-at="2019-12-28T23:44:50 EST" finished-at="2019-12-28T23:44:50 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- regular -->
