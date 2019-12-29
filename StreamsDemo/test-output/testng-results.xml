@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="64" started-at="2019-12-28T23:44:50 EST" finished-at="2019-12-28T23:44:50 EST">
+  <suite name="Default suite" duration-ms="73" started-at="2019-12-29T10:17:32 EST" finished-at="2019-12-29T10:17:32 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="64" started-at="2019-12-28T23:44:50 EST" finished-at="2019-12-28T23:44:50 EST">
+    <test name="Default test" duration-ms="73" started-at="2019-12-29T10:17:32 EST" finished-at="2019-12-29T10:17:32 EST">
       <class name="StreamTest">
-        <test-method status="PASS" signature="StreamFilter()[pri:0, instance:StreamTest@31dc339b]" name="StreamFilter" duration-ms="15" started-at="2019-12-28T23:44:50 EST" finished-at="2019-12-28T23:44:50 EST">
+        <test-method status="PASS" signature="Regular()[pri:0, instance:StreamTest@31dc339b]" name="Regular" duration-ms="12" started-at="2019-12-29T10:17:32 EST" finished-at="2019-12-29T10:17:32 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Regular -->
+        <test-method status="PASS" signature="StreamCollect()[pri:0, instance:StreamTest@31dc339b]" name="StreamCollect" duration-ms="5" started-at="2019-12-29T10:17:32 EST" finished-at="2019-12-29T10:17:32 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StreamCollect -->
+        <test-method status="PASS" signature="StreamFilter()[pri:0, instance:StreamTest@31dc339b]" name="StreamFilter" duration-ms="4" started-at="2019-12-29T10:17:32 EST" finished-at="2019-12-29T10:17:32 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StreamFilter -->
-        <test-method status="PASS" signature="regular()[pri:0, instance:StreamTest@31dc339b]" name="regular" duration-ms="2" started-at="2019-12-28T23:44:50 EST" finished-at="2019-12-28T23:44:50 EST">
+        <test-method status="PASS" signature="StreamMap()[pri:0, instance:StreamTest@31dc339b]" name="StreamMap" duration-ms="4" started-at="2019-12-29T10:17:32 EST" finished-at="2019-12-29T10:17:32 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- regular -->
+        </test-method> <!-- StreamMap -->
       </class> <!-- StreamTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
