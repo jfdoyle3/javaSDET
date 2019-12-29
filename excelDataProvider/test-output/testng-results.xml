@@ -1,76 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="999" started-at="2019-12-28T10:41:25 EST" finished-at="2019-12-28T10:41:26 EST">
+  <suite name="Default suite" duration-ms="2051" started-at="2019-12-28T10:51:36 EST" finished-at="2019-12-28T10:51:38 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="999" started-at="2019-12-28T10:41:25 EST" finished-at="2019-12-28T10:41:26 EST">
-      <class name="dataDriven.excelDataProvider.dataProvide">
-        <test-method status="PASS" signature="testCaseData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataDriven.excelDataProvider.dataProvide@578486a3]" name="testCaseData" duration-ms="16" started-at="2019-12-28T10:41:26 EST" data-provider="driveTest" finished-at="2019-12-28T10:41:26 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Student]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[CareerDevs]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="2051" started-at="2019-12-28T10:51:36 EST" finished-at="2019-12-28T10:51:38 EST">
+      <class name="dataDriven.excelDataProvider.excel">
+        <test-method status="PASS" signature="getExcel()[pri:0, instance:dataDriven.excelDataProvider.excel@520a3426]" name="getExcel" duration-ms="1924" started-at="2019-12-28T10:51:37 EST" finished-at="2019-12-28T10:51:38 EST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCaseData -->
-        <test-method status="PASS" signature="testCaseData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataDriven.excelDataProvider.dataProvide@578486a3]" name="testCaseData" duration-ms="9" started-at="2019-12-28T10:41:26 EST" data-provider="driveTest" finished-at="2019-12-28T10:41:26 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1010]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Resistance]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Futile]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseData -->
-        <test-method status="PASS" signature="testCaseData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:dataDriven.excelDataProvider.dataProvide@578486a3]" name="testCaseData" duration-ms="4" started-at="2019-12-28T10:41:26 EST" data-provider="driveTest" finished-at="2019-12-28T10:41:26 EST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3000]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Stop, wait]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Go]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCaseData -->
-      </class> <!-- dataDriven.excelDataProvider.dataProvide -->
+        </test-method> <!-- getExcel -->
+      </class> <!-- dataDriven.excelDataProvider.excel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
