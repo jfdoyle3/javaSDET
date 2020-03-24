@@ -28,9 +28,9 @@ pom.xml:
     </plugins>
   </build>
   <dependencies>
-     	<dependencies>
+     	<dependency>
            Dependency reference
-     	</dependencies>
+     	</dependency>
   </dependencies>
 ```
 
