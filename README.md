@@ -17,19 +17,24 @@
 * Continuing project on Desktop.
 ------------
 ## Maven
-       
-pom.xml
+
+Adding Packages/Dependencies to a Project:
+pom.xml:
+
+```html
 	<build>
 	 <plugins>
 	...
     </plugins>
   </build>
   <dependencies>
-     <dependencies>
-       Dependencies Reference
-     </dependencies>
-  </dependencis>
-------------
+     	<dependencies>
+           Dependency reference
+     	</dependencies>
+  </dependencies>
+```
+
+------
 
 ## Docker 
 
