@@ -9,11 +9,28 @@
 #### Purpose:
 * Leaving self notation and reference material how the code works.
     * note: perfect example why set/get is better than how I currently think.
+* Test Framework: TestNG
+
 ------------
 #### Changed Workstations: December 22, 2019
 * Laptop did not have enough memory to run Docker.
 * Continuing project on Desktop.
------------- 
+------------
+## Maven
+       
+pom.xml
+	<build>
+	 <plugins>
+	...
+    </plugins>
+  </build>
+  <dependencies>
+     <dependencies>
+       Dependencies Reference
+     </dependencies>
+  </dependencis>
+------------
+
 ## Docker 
 
 #### Selenium Stand Alone
@@ -27,7 +44,7 @@
 * Basic Grid setup
     * Make a _docker-compose.yaml_ file for configuration. 
        * There is a default hub configuration on [SeleniumHQ Github](https://github.com/SeleniumHQ/docker-selenium) to use as a start.
-	   
+	
 * Start Up Grid
      * docker-compose -f _docker-compose.yaml_ up
 
